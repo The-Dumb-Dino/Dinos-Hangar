@@ -7,6 +7,8 @@ To do that press escape > options > Configure Keybinds and then select a good ke
 
 After you open the console type in "SHIP_CUSTOM *ship-id*" and then the given ship will be playable.
 
+
+
 Ships and their ship ID:
 
 Federation Tanker:
