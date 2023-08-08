@@ -2,8 +2,11 @@
 This is the repository of Dino's Shipmod
 
 For now the mod is in beta and unbalanced so you may need to unlock some ships via console when its too hard.
-!!!FED TANKER HAS TO BE UNLOCKED WITH CONSOLE AND WONT BE UNLOCKED BY WHAT THE DESCRIPTION TELLS YOU!!!
 To do that press escape > options > Configure Keybinds and then select a good keybind to open the console.
+
+!!FED TANKER HAS TO BE UNLOCKED WITH CONSOLE AND WONT BE UNLOCKED BY WHAT THE DESCRIPTION TELLS YOU!!!
+
+
 
 
 After you open the console type in "SHIP_CUSTOM *ship-id*" and then the given ship will be playable.
