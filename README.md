@@ -1,7 +1,9 @@
 # Dinos-Hangar
 This is the repository of Dino's Shipmod
 
-For now the mod is in beta and unbalanced so you may need to unlock some ships via console when its too hard.
+PLEASE READ:
+
+For now the mod is in beta and should not be recorded and uploaded on YouTube. It may also be unbalanced so you need to unlock some ships via console when its too hard.
 To do that press escape > options > Configure Keybinds and then select a good keybind to open the console.
 
 !!FED TANKER HAS TO BE UNLOCKED WITH CONSOLE AND WONT BE UNLOCKED BY WHAT THE DESCRIPTION TELLS YOU!!!
