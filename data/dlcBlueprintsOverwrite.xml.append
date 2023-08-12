@@ -304,7 +304,7 @@
 		</shields>
 		<teleporter max="3" power="1" room="20" start="false" />
 		<temporal max="3" power="1" room="6" start="false" img="room_temporal_6_dino" />
-		<weapons max="8" power="2" room="3" start="false" img="room_weapons_2_dino">
+		<weapons max="8" power="2" room="3" start="true" img="room_weapons_2_dino">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
