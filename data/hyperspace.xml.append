@@ -10,9 +10,9 @@
     <!--SHIPS-->
 
     <mod-append:ship name="PLAYER_SHIP_FED_TANKER" b="true" c="true">
-		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
-		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
-		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
+		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
+		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
+		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_CIRCLE_DESTROYER</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
@@ -50,9 +50,9 @@
     </mod-append:customShip>
 
     <mod-append:ship name="PLAYER_SHIP_CIRCLE_DESTROYER" b="true" c="true">
-		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
-		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
-		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
+		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
+		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
+		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_FED_DREADNAUGHT</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
@@ -90,9 +90,9 @@
     </mod-append:customShip>
 
     <mod-append:ship name="PLAYER_SHIP_FED_DREADNAUGHT" b="true" c="true">
-		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
-		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
-		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_v_right_on.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
+		<arrow variant="a" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
+		<arrow variant="b" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
+		<arrow variant="c" direction="right" tooltip="ship_unlock_victory" image="arrow_v_right.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ENERGY_RESEARCHCRUISER</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
@@ -130,9 +130,9 @@
     </mod-append:customShip>
 
     <mod-append:ship name="PLAYER_SHIP_ENERGY_RESEARCHCRUISER" b="true" c="true">
-		<arrow variant="a" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_v_down_on.png">PLAYER_SHIP_MANTIS_WARHSIP</arrow>
-		<arrow variant="b" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_v_down_on.png">PLAYER_SHIP_MANTIS_WARHSIP</arrow>
-		<arrow variant="c" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_v_down_on.png">PLAYER_SHIP_MANTIS_WARHSIP</arrow>
+		<arrow variant="a" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_MANTIS_WARSHIP</arrow>
+		<arrow variant="b" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_MANTIS_WARSHIP</arrow>
+		<arrow variant="c" direction="down" tooltip="ship_unlock_victory" image="arrow_v_down.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_MANTIS_WARSHIP</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
@@ -188,9 +188,9 @@
             <icon>mantis_warship_ach_3</icon>
             <lockImage>mantis_warship_ach_3_lock</lockImage>
         </achievement>
-		<arrow variant="a" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
-		<arrow variant="b" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
-		<arrow variant="c" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
+		<arrow variant="a" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
+		<arrow variant="b" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
+		<arrow variant="c" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_JELLY_WARSHIP</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
@@ -222,9 +222,9 @@
     </mod-append:customShip>
 
     <mod-append:ship name="PLAYER_SHIP_JELLY_WARSHIP" b="true" c="true">
-		<arrow variant="a" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
-		<arrow variant="b" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
-		<arrow variant="c" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_v_left_on.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
+		<arrow variant="a" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
+		<arrow variant="b" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
+		<arrow variant="c" direction="left" tooltip="ship_unlock_victory" image="arrow_v_left.png" unlockedImage="arrow_gone.png">PLAYER_SHIP_ANAEROBIC_SALVAGER</arrow>
 		<splitVictoryAchievement>true</splitVictoryAchievement>
         <unlock variant="a" silent="false">
             <type>2</type>
