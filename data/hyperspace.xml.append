@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<version>^1.8.0</version>
+
+<showShipAchievements enabled="true" toggle="true" hideIfMissing="true" id="hangar_achievements_title_default"/>
+
 <mod:findLike type="ships">
 
 
@@ -322,7 +326,9 @@
 
 </mod:findLike>
 
-
+<mod:findLike type="scripts" limit="1">
+    <mod-append:script>data/dino_scripts/ships-ach.lua</mod-append:script>
+</mod:findLike>
 
 <!--unlocker event for pre-release-->
 
