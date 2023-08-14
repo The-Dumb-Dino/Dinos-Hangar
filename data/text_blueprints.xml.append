@@ -184,7 +184,7 @@ Is a modell of the federation Dreadnaughts. Somehow some pirates managed it to d
 <text name="weapon_ARTILLERY_FED_DREADNAUGHT_title">Modified Artillery Beam</text>
 <text name="weapon_ARTILLERY_FED_DREADNAUGHT_short">Mod-Artillery</text>
 <text name="weapon_ARTILLERY_FED_DREADNAUGHT_desc">This is a modified version of the standard Federation artillery beams; It deals 2 damage to the hull for every room it hits, but is not as long and fast. Can cause fire and breaches. More power means faster cooldown.</text>
-<text name="weapon_ARTILLERY_FED_DREADNAUGHT_tooltip">Artillery: Moddedbeam that deals 2 damage, can set a fire, can cause breaches and pierces all shields.</text>
+<text name="weapon_ARTILLERY_FED_DREADNAUGHT_tooltip">Artillery: Modded beam that deals 2 damage, can set a fire, can cause breaches and pierces all shields.</text>
 
 <text name="weapon_ARTILLERY_FLAME_title">Fire Artillery Beam</text>
 <text name="weapon_ARTILLERY_FLAME_short">Fire-Artillery</text>

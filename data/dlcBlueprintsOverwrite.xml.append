@@ -243,7 +243,6 @@
 	<maxPower amount="6" />
 	<crewCount amount="4" class="ghost" />
 	<aug name="FTL_JUMPER" />
-	<aug name="BACKUP_DNA" />
 	<shieldImage>fed_tanker</shieldImage>
 	<cloakImage>fed_tanker</cloakImage>
 </shipBlueprint>
@@ -323,7 +322,6 @@
 	<maxPower amount="9" />
 	<crewCount amount="2" class="engi" />
 	<crewCount amount="1" class="rock" />
-	<aug name="BACKUP_DNA" />
 	<shieldImage>circle_destroyer</shieldImage>
 	<cloakImage>circle_destroyer</cloakImage>
 </shipBlueprint>
