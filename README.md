@@ -1,6 +1,6 @@
-## Dinos-Hangar
+# Dinos-Hangar
 
-# PLEASE READ:
+## PLEASE READ:
 
 For now the mod is in beta and should not be recorded and uploaded on YouTube. It may also be unbalanced so you need to unlock some ships via console when its too hard.
 To do that press escape > options > Configure Keybinds and then select a good keybind to open the console.
@@ -10,7 +10,7 @@ After you open the console type in "SHIP_CUSTOM *ship-id*" and then the given sh
 
 
 
-# Ships and their ship ID:
+## Ships and their ship ID:
 
 Federation Tanker:
 
