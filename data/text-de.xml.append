@@ -104,7 +104,16 @@ Es ist ein Modell der Federations Großkampfschiffen.Irgendwie haben es paar Pir
 <text name="ship_PLAYER_SHIP_MANTIS_WARSHIP_3_class" language="de">Mantis-Schlachtschiff</text>
 <text name="ship_PLAYER_SHIP_MANTIS_WARSHIP_3_name" language="de">Breker</text>
 <text name="ship_PLAYER_SHIP_MANTIS_WARSHIP_3_desc" language="de">Ausgestattet mit einem Temporalmanipulator und einem Teleporter kombiniert mit einer Feuer- und Betäubungsbombe, kann dieses Schiff die feindliche Besatzung bei lebendigem Leibe verbrennen und sie gleichzeitig auf die altbekannte Weise eliminieren.</text>
-<text name="ship_PLAYER_SHIP_MANTIS_WARSHIP_3_unlock" language="de">Erreiche Sektor 5 mit dem Mantis-Schlachtschiff Typ B oder besiege das Flagschiff mit dem Mantis-Schlachtschiff Typ A, um dieses Schiff freizuschalten.</text>
+<text name="ship_PLAYER_SHIP_MANTIS_WARSHIP_3_unlock" language="de">Schließe 2/3 Mantis-Kriegsschiff-Erfolgen ab, um dieses Schiff freizuschalten.</text>
+
+<text name="ach_mantis_warship_1_name" language="de">TODO: Add Gemran translation</text>
+<text name="ach_mantis_warship_1_desc" language="de">TODO: Add Gemran translation</text>
+
+<text name="ach_mantis_warship_2_name" language="de">TODO: Add Gemran translation</text>
+<text name="ach_mantis_warship_2_desc" language="de">TODO: Add Gemran translation</text>
+
+<text name="ach_mantis_warship_3_name" language="de">TODO: Add Gemran translation</text>
+<text name="ach_mantis_warship_3_desc" language="de">TODO: Add Gemran translation</text>
 
 
 <text name="ship_PLAYER_SHIP_JELLY_WARSHIP_name" language="de">Der Letzte Admiral</text>

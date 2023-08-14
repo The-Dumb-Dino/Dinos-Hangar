@@ -42,9 +42,19 @@ local function current_sector()
     return Hyperspace.Global.GetInstance():GetCApp().world.starMap.worldLevel + 1
 end
 
--------------------------
--- ACHIEVEMENT UNLOCKS --
--------------------------
+local function count_ship_achievements(achPrefix)
+    local count = 0
+    for i = 1, 3 do
+        if Hyperspace.CustomAchievementTracker.instance:GetAchievementStatus(achPrefix.."_"..tostring(i)) > -1 then
+            count = count + 1
+        end
+    end
+    return count
+end
+
+--------------------
+-- MANTIS WARSHIP --
+--------------------
 
 -- Easy
 
@@ -54,3 +64,23 @@ end
 
 -- Hard
 
+
+-------------------------------------
+-- LAYOUT UNLOCKS FOR ACHIEVEMENTS --
+-------------------------------------
+
+local achLayoutUnlocks = {
+    {
+        achPrefix = "ACH_SHIP_MANTIS_WARSHIP",
+        unlockShip = "PLAYER_SHIP_MANTIS_WARSHIP_3"
+    }
+}
+
+script.on_internal_event(Defines.InternalEvents.ON_TICK, function()
+    local unlockTracker = Hyperspace.CustomShipUnlocks.instance
+    for _, unlockData in ipairs(achLayoutUnlocks) do
+        if not unlockTracker:GetCustomShipUnlocked(unlockData.unlockShip) and count_ship_achievements(unlockData.achPrefix) >= 2 then
+            unlockTracker:UnlockShip(unlockData.unlockShip, false)
+        end
+    end
+end)
