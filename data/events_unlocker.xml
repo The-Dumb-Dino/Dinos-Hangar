@@ -110,21 +110,6 @@
         </event>
     </choice>
     <choice>
-        <text>Comming soon ship</text>
-        <event>
-            <text>This will unlock the comming soon ship. There is no purpose why you would do this - can cause crashes when selected in hangar. Only unlock for testing purpose of for fun.</text>
-            <choice>
-                <text>Proceed Unlock</text>
-                <event>
-                    <unlockCustomShip>PLAYER_COMMING_SOON</unlockCustomShip>
-                </event>
-            </choice>
-            <choice>
-                <text>Go back</text>
-            </choice>
-        </event>
-    </choice>
-    <choice>
         <text>Exit Menu</text>
         <event/>
     </choice>
