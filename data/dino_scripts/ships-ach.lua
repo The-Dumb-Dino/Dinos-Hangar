@@ -27,6 +27,14 @@ local function userdata_table(userdata, tableName)
     return userdata.table[tableName]
 end
 
+-- Check whether we're fighting a ship
+local function in_ship_combat(playerShip, enemyShip)
+    return enemyShip and
+           playerShip and
+           enemyShip._targetable.hostile and
+           not (enemyShip.bDestroyed or playerShip.bJumping)
+end
+
 local function string_starts(str, start)
     return string.sub(str, 1, string.len(start)) == start
 end
@@ -52,12 +60,41 @@ local function count_ship_achievements(achPrefix)
     return count
 end
 
+--------------
+-- TRACKERS --
+--------------
+
+-- Track changes in system damage
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(ship)
+    for system in vter(ship.vSystemList) do
+        if ship:HasSystem(system:GetId()) then
+            local damage = system.healthState.second - system.healthState.first
+            local sysData = userdata_table(system, "mods.dino.achTrackSys")
+            sysData.damageChange = damage - (sysData.damageLast or damage)
+            sysData.damageLast = damage
+        end
+    end
+end)
+
 --------------------
 -- MANTIS WARSHIP --
 --------------------
 
 -- Easy
-
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(ship)
+    if ship.iShipId == 0 and in_ship_combat(ship, Hyperspace.ships.enemy) and should_track_achievement("ACH_SHIP_MANTIS_WARSHIP_1", ship, "PLAYER_SHIP_MANTIS_WARSHIP") then
+        for system in vter(ship.vSystemList) do
+            local damageChange = userdata_table(system, "mods.dino.achTrackSys").damageChange
+            if damageChange and damageChange < 0 and ship.ship.vRoomList[system:GetRoomId()].extend.timeDilation ~= 0 then
+                local vars = Hyperspace.playerVariables
+                vars.loc_ach_mantis_time_repairs = vars.loc_ach_mantis_time_repairs + 1
+                if vars.loc_ach_mantis_time_repairs >= 10 then
+                    Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_SHIP_MANTIS_WARSHIP_1", false)
+                end
+            end
+        end
+    end
+end)
 
 -- Normal
 

@@ -345,5 +345,6 @@
 <!--unlocker event for pre-release-->
 
 <events>
-<eventFile>unlocker</eventFile>
+    <variable name="loc_ach_mantis_time_repairs" op="set" val="0"/>
+    <eventFile>unlocker</eventFile>
 </events>
