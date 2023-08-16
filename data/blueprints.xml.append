@@ -949,7 +949,7 @@
 				<number>0</number>
 			</slot>
 		</doors>
-		<drones max="8" power="2" room="12" start="false" img="room_drones_6_dino" />
+		<drones max="8" power="2" room="12" start="true" img="room_drones_6_dino" />
 		<engines max="8" power="1" room="22" start="true" img="room_engines_3">
 			<slot>
 				<direction>right</direction>
@@ -1001,8 +1001,7 @@
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="8" />
-	<crewCount amount="1" class="mantis" />
-	<crewCount amount="1" class="mantis" />
+	<crewCount amount="2" class="mantis" />
 	<crewCount amount="1" class="human" />
 	<aug name="CREW_STIMS" />
 	<shieldImage>mantis_warship</shieldImage>
