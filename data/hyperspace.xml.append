@@ -326,5 +326,6 @@
 
 <events>
     <variable name="loc_ach_mantis_time_repairs" op="set" val="0"/>
+    <variable name="loc_ach_mantis_only_boarders" op="set" val="0"/>
     <eventFile>unlocker</eventFile>
 </events>

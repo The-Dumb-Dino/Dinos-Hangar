@@ -35,6 +35,36 @@ local function in_ship_combat(playerShip, enemyShip)
            not (enemyShip.bDestroyed or playerShip.bJumping)
 end
 
+-- Count the number of living crew belonging to a given ship
+local function count_crew(ship)
+    if not ship then return 0 end
+    local count = 0
+    for crew in vter(ship.vCrewList) do
+        if crew.iShipId == ship.iShipId and crew.crewAnim.status ~= 3 then
+            count = count + 1
+        end
+    end
+    local otherShip = Hyperspace.ships(1 - ship.iShipId)
+    if otherShip then
+        for crew in vter(otherShip.vCrewList) do
+            if crew.iShipId == ship.iShipId and crew.crewAnim.status ~= 3 then
+                count = count + 1
+            end
+        end
+    end
+    return count
+end
+
+-- Returns true if a ship has been crew killed
+local function check_crew_kill(ship)
+    local notCrewKilled = not ship or
+                          ship.bAutomated or
+                          ship.bDestroyed or
+                          Hyperspace.CrewFactory:GetCloneReadyList(ship.iShipId == 0):size() > 0 or
+                          count_crew(ship) > 0
+    return not notCrewKilled
+end
+
 local function string_starts(str, start)
     return string.sub(str, 1, string.len(start)) == start
 end
@@ -100,7 +130,60 @@ end)
 
 
 -- Hard
-
+local combatTimer = 0
+local gameJustLoaded = false
+local inCombatLastFrame = false
+do
+    local function reset_on_hit(ship, projectile)
+        if ship.iShipId == 1 and projectile then
+            Hyperspace.playerVariables.loc_ach_mantis_only_boarders = 0 -- Invalidate if ship hit is hit
+        end
+    end
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, reset_on_hit)
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, reset_on_hit)
+end
+script.on_init(function() gameJustLoaded = true end)
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(ship)
+    if ship.iShipId == 0 and should_track_achievement("ACH_SHIP_MANTIS_WARSHIP_3", ship, "PLAYER_SHIP_MANTIS_WARSHIP") then
+        local vars = Hyperspace.playerVariables
+        if gameJustLoaded then
+            gameJustLoaded = false
+            inCombatLastFrame = true
+            vars.loc_ach_mantis_only_boarders = 0 -- Prevent save-scumming the timer
+            return
+        end
+        local enemyShip = Hyperspace.ships.enemy
+        if inCombatLastFrame then
+            if vars.loc_ach_mantis_only_boarders == 1 then
+                local boarders = false
+                for crew in vter(enemyShip.vCrewList) do
+                    if crew.iShipId == 0 then
+                        local crewSpecies = crew:GetSpecies()
+                        if not (string_starts(crewSpecies, "mantis") or crewSpecies == "unique_kaz" or crewSpecies == "unique_freddy") then
+                            vars.loc_ach_mantis_only_boarders = 0 -- Invalidate if any boarders aren't mantis
+                            return
+                        end
+                        boarders = true
+                    end
+                end
+                if combatTimer > 0 or boarders then -- Track time in combat after crew have boarded
+                    combatTimer = combatTimer + Hyperspace.FPS.SpeedFactor/16
+                    if combatTimer > 5 then
+                        vars.loc_ach_mantis_only_boarders = 0 -- Invalidate if timer has passed 5 seconds
+                        return
+                    end
+                end
+                if check_crew_kill(enemyShip) then
+                    Hyperspace.CustomAchievementTracker.instance:SetAchievement("ACH_SHIP_MANTIS_WARSHIP_3", false)
+                end
+            end
+        else
+            combatTimer = 0
+            vars.loc_ach_mantis_only_boarders = 1
+        end
+        inCombatLastFrame = in_ship_combat(ship, enemyShip)
+    end
+end)
 
 -------------------------------------
 -- LAYOUT UNLOCKS FOR ACHIEVEMENTS --
