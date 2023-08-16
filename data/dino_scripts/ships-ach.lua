@@ -103,7 +103,11 @@ end)
 
 local function crew_is_mantis(crew)
     local crewSpecies = crew:GetSpecies()
-    return string_starts(crewSpecies, "mantis") or crewSpecies == "unique_kaz" or crewSpecies == "unique_freddy"
+    if crewSpecies == "mantis" then return true end
+    for mantisName in vter(Hyperspace.Blueprints.GetBlueprintList("LIST_CREW_MANTIS")) do
+        if crewSpecies == mantisName then return true end
+    end
+    return false
 end
 
 -- Easy
