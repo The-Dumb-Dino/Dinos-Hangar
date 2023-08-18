@@ -205,12 +205,12 @@
             <shipReq>PLAYER_SHIP_ENERGY_RESEARCHCRUISER_3</shipReq>
         </unlock>
         <unlock variant="b" silent="false">
-            <type>1</type>
-            <shipReq>PLAYER_SHIP_MANTIS_WARSHIP</shipReq>
-            <value>8</value>
+            <type>4</type>
         </unlock>
         <unlock variant="c" silent="false">
-            <type>4</type>
+            <type>1</type>
+            <shipReq>PLAYER_SHIP_MANTIS_WARSHIP_2</shipReq>
+            <value>8</value>
         </unlock>
         <!--Unlocker Cheat-->
 		<unlock variant="a" silent="false">
@@ -299,7 +299,7 @@
     </mod-append:customShip>
 
     
-<!--Page-->
+    <!--Page-->
 
     <mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_FED_TANKER</mod-append:ship> <!--(1)-->

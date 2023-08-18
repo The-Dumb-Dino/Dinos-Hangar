@@ -250,7 +250,7 @@ end)
 local achLayoutUnlocks = {
     {
         achPrefix = "ACH_SHIP_MANTIS_WARSHIP",
-        unlockShip = "PLAYER_SHIP_MANTIS_WARSHIP_3"
+        unlockShip = "PLAYER_SHIP_MANTIS_WARSHIP_2"
     }
 }
 
