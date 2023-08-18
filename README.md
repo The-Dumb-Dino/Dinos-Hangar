@@ -76,6 +76,6 @@ Type B - "PLAYER_SHIP_ANAEROBIC_SALVAGER_2"
 Type C - "PLAYER_SHIP_ANAEROBIC_SALVAGER_3"
 
 ## Credits
-@Chrono VOrtex - Ship achievements in lua
+@Chrono Vortex - Ship achievements in lua
 @limber - Much feedback and bug reports
 @Ultimate drone Fan - Bug reports
