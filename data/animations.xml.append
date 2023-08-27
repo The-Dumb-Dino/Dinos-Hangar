@@ -46,8 +46,8 @@
 	<desc length="12" x="0" y="0"/>
 	<chargedFrame>5</chargedFrame>
 	<fireFrame>8</fireFrame>
-	<firePoint  x="10" y="4"/>
-	<mountPoint x="2" y="32"/>
+	<firePoint  x="10" y="16"/>
+	<mountPoint x="2" y="44"/>
 	<chargeImage>weapons/burst_fire_1_glow.png</chargeImage>
 </weaponAnim>
 
