@@ -410,7 +410,7 @@
 		<hacking max="3" power="1" room="6" start="true" img="room_hacking_3_dino" />
 		<medbay max="3" power="1" room="18" start="true" img="room_medbay_4">
 			<slot>
-				<number>-2</number>
+				<number>0</number>
 			</slot>
 		</medbay>
 		<mind max="3" power="1" room="21" start="false" img="room_mind_3" />
