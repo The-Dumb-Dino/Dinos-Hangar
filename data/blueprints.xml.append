@@ -724,7 +724,7 @@
 		<hacking power="1" room="11" start="false" img="room_hacking_2" />
 		<medbay power="1" room="12" start="true" img="room_medbay_3">
 			<slot>
-				<number>-2</number>
+				<number>3</number>
 			</slot>
 		</medbay>
 		<mind power="1" room="7" start="false" img="room_mind_3_dino" />
